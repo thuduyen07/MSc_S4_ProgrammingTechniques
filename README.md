@@ -123,3 +123,108 @@ Tương tự với CIN >> a;
 Kiểu dữ liệu
 ![Alt text](image-3.png)
 
+![Alt text](image-5.png)
+
+- đoạn code của mình sẽ được chứa vào vùng TEXT
+- initualized data và uninitualized data là vùng nhớ cố định, chứa biến toàn cục 
+- heap - có thể co dãn
+- stack - có thể co dãn
+
+câu lệnh define trong c không có dấu chấm phẩy: #define PI 3.14
+
+![Alt text](image-6.png)
+Quy tắc đặt tên biến: 
+- từ A -> Z, underscore
+- quy tắc chung
+- không dấu
+- không khoảng trắng
+- không kí tự đặc biệt
+
+giới thiệu toán tử sizeof:
+- sizeof(int) (=4 bytes)
+- sizeof(c)
+
+Lưu đồ
+- UML
+
+![Alt text](image-7.png)
+
+![Alt text](image-8.png)
+chú ý: unsigned char = 256 (= 256 mod 256 = 0)
+
+![Alt text](image-9.png)
+ 
+chú ý tràn số vì nó tự động mod
+
+![Alt text](image-10.png)
+![Alt text](image-12.png)
+ý tưởng lưu trữ số âm, nhưng xu là số 0 có 2 cách lưu trữ =))
+
+người ta phát triển cách khác để lưu trữ số âm, đó là bù 2
+
+![Alt text](image-11.png)
+thao tác bit: &, |,
+
+shift left: << -- tác dụng nhân 2 --> tốc độ nhanh hơn
+
+shift right: >> -- tác dụng: chia 2 --> tốc độ nhanh hơn
+
+trong C không hỗ trợ rotate
+
+Một số trường hợp gán ngoài vùng giá trị, thường không báo lỗi nên ta cần chú ý -> cần kiểm soát tốt vùng giá trị
+
+![Alt text](image-13.png)
+số thực, hầu hết không chính xác trong các ngôn ngữ lập trình -- cần chú ý nếu xử lý tính toán ngặt nghèo
+
+![Alt text](image-14.png)
+thao tác luận lý: &&, ||, 
+
+trong C không có kiểu bool (true#0, false=0)
+
+![Alt text](image-15.png)
+giới thiệu kiểu dữ liệu wchar_t
+
+toán tử gán
+![Alt text](image-16.png)
+
+trong C, toán tử + ưu tiên hơn toán tử gán (=)
+
+toán tử hậu tố: a++ hoặc a--
+
+```
+b=5;
+a=b++;
+//thì a =5, b=6 sau khi chạy
+```
+
+toán tử tiền tố: ++a hoặc --a
+
+hiện tượng tràn số
+![Alt text](image-17.png)
+
+Giới thiệu bài toán số nguyên lớn (BigInterger)
+
+Một số trường hợp hạn chế khi lưu số thực do khoảng không (gap), máy tính chỉ có thể tính toán xấp xỉ. Trong trường hợp này, ta có thể handle bằng cách sử dụng hiệu để kiểm tra
+![Alt text](image-18.png)
+
+Giới thiệu thư viện <ctype.h>
+
+![Alt text](image-19.png)
+
+cần tự code để tính những hàm thư viện không hỗ trợ, ví dụ:
+![Alt text](image-20.png)
+
+![Alt text](image-21.png)
+
+cách sử dụng printf (định dạng, truncate)
+![Alt text](image-22.png)
+![Alt text](image-23.png)
+![Alt text](image-24.png)
+
+toán tử hỗ trợ nhập số thập lục và xuất số bát phân:
+![Alt text](image-25.png)
+
+Bài tập về nhà: Chỉ cần làm bài 3
+- yêu cầu người dùng nhập vào số tiền, đổi ra tất cả các khả năng của mệnh giá (chỉ cần xuất 1 kết quả)
+
+TenHV1_TenHV2.cpp -> submit link moodle
