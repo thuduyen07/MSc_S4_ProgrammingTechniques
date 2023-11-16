@@ -8,12 +8,13 @@ int main()
 {
     int amount;
     int count;
-    int denominations[6] = {500, 200, 100, 50, 20, 10};
+    int denominations[6] = {500000, 200000, 100000, 50000, 20000, 10000};
+    cout << "Nhap so tien: ";
     cin >> amount;
-    string result = "";
+    
     if (amount % 10000 == 0)
     {
-        amount = amount / 1000;
+        string result = to_string(amount) + " = ";
         for (int i = 0; i < 6; i++)
         {
             if (amount >= denominations[i])
@@ -21,6 +22,9 @@ int main()
                 count = amount / denominations[i];
                 amount = amount % denominations[i];
                 result += to_string(count) + "x" + to_string(denominations[i]) + "+";
+            }
+            else{
+                result += "0x" + to_string(denominations[i]) + "+";
             }
         }
         result.pop_back();
