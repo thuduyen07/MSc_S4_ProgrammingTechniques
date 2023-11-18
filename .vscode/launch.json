@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/duyennguyen/Downloads/MSc_S4_ProgrammingTechniques",
+      "program": "/Users/duyennguyen/Downloads/MSc_S4_ProgrammingTechniques/build/Debug/outDebug"
+    }
+  ]
+}
