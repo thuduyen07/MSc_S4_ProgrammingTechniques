@@ -7,5 +7,4 @@ void main()
     printf("Kich thuoc long: %d/n", sizeof(long));
     printf("Kich thuoc float: %d/n", sizeof(float));
     printf("Kich thuoc char: %d/n", sizeof(char));
-
 }
