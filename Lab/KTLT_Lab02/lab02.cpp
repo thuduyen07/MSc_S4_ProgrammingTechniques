@@ -5,6 +5,10 @@ using namespace std;
 #define Vadidate_K(k, n) ((k >= 1) && (k <= n)) ? true : false;
 #define Vadidate_N(n) (n >= 1) ? true : false;
 
+int factorial(int number);
+void validateInputVarables(int &k, int &n);
+float combination(int k, int n);
+
 int factorial(int number)
 {
     if (number == 1 || number == 0)
