@@ -228,3 +228,48 @@ Bài tập về nhà: Chỉ cần làm bài 3
 - yêu cầu người dùng nhập vào số tiền, đổi ra tất cả các khả năng của mệnh giá (chỉ cần xuất 1 kết quả)
 
 TenHV1_TenHV2.cpp -> submit link moodle
+
+## 201123
+
+Giới thiệu namespace
+
+Biến toàn cục - biến cục bộ
+
+Branch statement (if else - switch) và lưu đồ thuật toán
+
+Cơ chế truyền tham trị:
+- vùng nhớ phải tương đương
+- mất thời gian sao chép qua vùng nhớ mới
+- ko thay đổi giá trị của biến truyền vào
+```
+void round(double);
+y = round(a);
+```
+
+Cơ chế truyền tham chiếu
+- truyền địa chỉ đi
+- thay đổi trực tiếp trên biến đang xét (ở đây là thay đổi trực tiếp trên biến a)
+```
+void round(double &);
+round(a);
+```
+
+biến cục bộ tĩnh (local static variable): chỉ chạy mụt lần và chia sẻ giá trị của nó cho các lần chạy sau
+
+template (generic in c#) function: dùng khi overload cho nhiều kiểu đối số
+```
+template <class T>
+void swap(T& a, T& b){
+    T c = a;
+    a = b;
+    b = c;
+}
+```
+
+con trỏ hàm
+```
+Count(long, int check(int));
+```
+
+![Bài tập](./z4900192956987_6d7bb3fa6341813ec14454af0c944d2f.jpg)
+![](./z4900192964812_856e614d014aa197618ca9c72cf436a5.jpg)
