@@ -273,3 +273,10 @@ Count(long, int check(int));
 
 ![Bài tập](./z4900192956987_6d7bb3fa6341813ec14454af0c944d2f.jpg)
 ![](./z4900192964812_856e614d014aa197618ca9c72cf436a5.jpg)
+
+## 271123
+
+```static```: dùng khi một biến hoặc một phương thức toàn cục dùng trong một file mà không muốn chia sẻ với các file khác bên ngoài
+```extern```: dùng khi dùng một biến hoặc một phương thức nằm ở các file khác bên ngoài file đang xử lí
+
+Decision Table - bảng quyết định
