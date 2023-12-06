@@ -68,12 +68,12 @@ int sumEvenElements(int array[], int size)
 
 int productOddPositionElements(int array[], int size)
 {
-    int sum = 0;
+    int result = 1;
     for (int i = 0; i < size; i++)
     {
-        sum += (i % 2 == 1) ? array[i] : 0;
+        result *= (i % 2 == 1) ? array[i] : 1;
     }
-    return sum;
+    return result;
 }
 
 int main()
