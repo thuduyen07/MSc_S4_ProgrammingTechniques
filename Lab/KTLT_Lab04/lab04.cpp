@@ -84,5 +84,5 @@ int main()
     output(array, size);
     cout << "======================================" << endl;
     cout << "Tong cac so chan trong mang la:  " << sumEvenElements(array, size) << endl;
-    cout << "Tong cac vi tri le trong mang la:  " << productOddPositionElements(array, size) << endl;
+    cout << "Tich gia tri co vi tri le trong mang la:  " << productOddPositionElements(array, size) << endl;
 }
