@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <iostream>
 #include <limits>
+#include<limits.h>
+
 using namespace std;
 #define MAX_SIZE 100
-#define MAX_INT 2147483647
-#define MIN_INT -2147483648
 
 void input(int array[], int &size)
 {
@@ -30,7 +30,7 @@ void input(int array[], int &size)
         while (1)
         {
 
-            if (array[i] == MIN_INT || array[i] == MAX_INT)
+            if (array[i] == INT_MIN || array[i] == INT_MAX)
             {
                 cin.clear();
                 cin.ignore(1);
