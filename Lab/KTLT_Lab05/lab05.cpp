@@ -61,15 +61,18 @@ struct PHANSO
         PHANSO t;
         if (b.tu != 0)
         {
-            float temp = b.tu;
-            b.tu = b.mau;
-            b.mau = temp;
+            PHANSO temp;
+            temp.tu = b.mau;
+            temp.mau = b.tu;
+            // float temp = b.tu;
+            // b.tu = b.mau;
+            // b.mau = temp;
             t = this->operator*(b);
         }
         else
         {
             cout << "tu phai khac khong";
-            return {0, 0};
+            return {0, 1};
         }
         t.rutGon();
         return t;
@@ -126,7 +129,7 @@ struct PHANSO
 
 PHANSO findLargestElement(PHANSO array[], int size)
 {
-    PHANSO largest_element = {0, 0};
+    PHANSO largest_element = {0, 1};
     if (size >= 1)
     {
         largest_element = array[0];
@@ -145,9 +148,9 @@ PHANSO findLargestElement(PHANSO array[], int size)
     return largest_element;
 }
 
-PHANSO sumElemetns(PHANSO array[], int size)
+PHANSO sumElements(PHANSO array[], int size)
 {
-    PHANSO sum = {0, 0};
+    PHANSO sum = {0, 1};
     if (size >= 1)
     {
         sum = array[0];
@@ -201,8 +204,10 @@ int main()
     PHANSO b = {2.0, 4.0};
     PHANSO array[] = {{1.0, 8.0}, {2.0, 7.0}, {3.0, 6.0}, {4.0, 5.0}, {5.0, 4.0}, {6.0, 3.0}, {7.0, 2.0}};
 
+    cout << "Mang la: " << endl;
+    printArray(array, 7);
     cout << "Phan so lon nhat trong mang la: " << findLargestElement(array, 7).print_PhanSo().str() << endl;
-    cout << "Tong cac phan tu trong mang la: " << sumElemetns(array, 7).print_PhanSo().str() << endl;
+    cout << "Tong cac phan tu trong mang la: " << sumElements(array, 7).print_PhanSo().str() << endl;
     cout << "Mang sau khi duoc sap xep trong mang la: " << endl;
     sortArray(array, 7);
     printArray(array, 7);
