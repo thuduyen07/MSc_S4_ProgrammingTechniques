@@ -31,3 +31,9 @@ jobs:
         cd ./Lab/KTLT_Lab05
         g++ lab05.cpp
         ./a.out
+        
+    - name: Run Lab06
+      run: |
+        cd ./Lab/KTLT_Lab06
+        g++ lab06.cpp
+        ./a.out
