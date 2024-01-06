@@ -280,3 +280,9 @@ Count(long, int check(int));
 ```extern```: dùng khi dùng một biến hoặc một phương thức nằm ở các file khác bên ngoài file đang xử lí
 
 Decision Table - bảng quyết định
+
+## 240104
+## Con trỏ - Pointer
+- vector khắc phục được hạn chế phải khai báo số phần tử ngay từ đầu trong mảng. Từ đó có thế giải quyết vấn đề về bộ nhớ một cách tốt hơn
+- vector có thể được lồng nhau tạo thành vector 2D/3D ví dụ: 
+```vector<vector <int>> my_vector;```
