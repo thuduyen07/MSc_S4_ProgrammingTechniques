@@ -286,3 +286,6 @@ Decision Table - bảng quyết định
 - vector khắc phục được hạn chế phải khai báo số phần tử ngay từ đầu trong mảng. Từ đó có thế giải quyết vấn đề về bộ nhớ một cách tốt hơn
 - vector có thể được lồng nhau tạo thành vector 2D/3D ví dụ: 
 ```vector<vector <int>> my_vector;```
+
+## Recordings
+- https://studenthcmusedu-my.sharepoint.com/:f:/g/personal/22c11005_student_hcmus_edu_vn/EtFvq5EDOO9AvH60zgSNJ-IB-nTMnLeaREt9r0QLsa9MeA?e=VkSU6j
